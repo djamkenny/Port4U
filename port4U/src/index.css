@@ -3,6 +3,7 @@
 * {
   border: 0;
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -11,5 +12,11 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: white;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }

@@ -1,0 +1,49 @@
+.top-projects {  
+    background-color: #1e1e2f96;  
+    color: #fff;  
+    padding: 20px;  
+    border-radius: 8px;
+    width: 50%;
+ 
+  }  
+  
+  h2 {  
+    margin-bottom: 15px;
+    padding: 20px 0 0 5px; 
+    margin-left: 5px; 
+    font-size: 15px;
+  }  
+  
+  table {  
+    width: 100%;
+    border-collapse: collapse;  
+  }  
+  
+  th, td {  
+    padding: 10px;  
+    text-align: left;  
+  }  
+  
+  th {  
+    background-color: #26263cbb;
+    color: #852D2D;
+  }  
+  
+  tr:nth-child(even) {  
+    background-color: #26263cbb;  
+  }  
+  
+  tr:hover {  
+    background-color: #26263cbb;  
+  }
+
+
+
+
+  @media (max-width: 768px) {
+    .top-projects {
+        padding: 0;
+        width: 95%;
+        margin: 20px 10px 0 10px;
+    }
+}

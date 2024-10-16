@@ -1,0 +1,133 @@
+body {  
+    margin: 0;  
+    font-family: Arial, sans-serif;  
+    background-color: #1e1e2f;  
+    color: #ffff;  
+}  
+
+.app-container {  
+    position: relative; /* Relative position for button movement */  
+}  
+
+.toggle-button {  
+    position: fixed;  
+    top: 20px;  
+    right: 20px; /* Position it to the right */  
+    background: transparent;  
+    border: none;  
+    cursor: pointer;  
+    z-index: 1000; /* Ensure button is above other elements */  
+    padding: 10px;  
+    background-color: #1e1e2f;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.bar {  
+    display: block;  
+    width: 30px;  
+    height: 3px;  
+    background-color: #3b4266;  
+    margin: 5px auto;  
+    transition: all 0.3s ease;  
+}  
+
+.sidebar {  
+    width: 350px;  
+    background-color: #1F233D;  
+    padding: 20px;  
+    position: fixed; /* Fixed position for larger screens */  
+    left: 0;  
+    top: 0;  
+    bottom: 0;  
+    transition: transform 0.3s ease; /* Smooth transition for opening/closing */  
+    transform: translateX(-100%); /* Hide sidebar off-screen initially */
+    height: 100vh;
+}  
+
+.sidebar.open {  
+    transform: translateZ(0);  
+}  
+
+.sidebar.closed {  
+    transform: translateX(-100%); 
+}  
+
+.logo {  
+    font-size: 30px;  
+    font-weight: bold;  
+    margin-bottom: 20px;  
+}  
+
+.section {  
+    margin-bottom: 20px;  
+    color: #A1A8A5;  
+    border-bottom: solid 0.21px #2d3356;  
+}  
+
+h3 {  
+    font-size: 15px;  
+    margin-bottom: 10px;  
+    font-weight: bold;  
+    color: #4c4f5e;  
+}  
+
+ul {  
+    list-style-type: none;  
+    padding: 0;  
+}  
+
+li {  
+    padding: 10px; 
+    margin-bottom: 4px; 
+    cursor: pointer;
+    margin-left: 20px; 
+}  
+
+li:hover {  
+    background-color: #3a3a4f;  
+}  
+
+.active {  
+    background-color: #4a4a5f;  
+}  
+
+.user {  
+    display: flex;  
+    align-items: center;  
+    margin-top: auto;  
+}  
+
+.user-img {  
+    border-radius: 50%;  
+    width: 40px;  
+    height: 40px;  
+    margin-right: 10px;  
+}  
+
+/* Mobile Styles */  
+@media (max-width: 868px) {  
+    .sidebar {  
+        width: 100%; /* Full width on mobile */  
+        max-width: none; /* Remove max-width */  
+        padding: 15px; /* Adjust padding */  
+        overflow-y: scroll;
+    }  
+
+    h3 {  
+        font-size: 16px; /* Smaller font size for headings */  
+    }  
+
+    li {  
+        padding: 8px; /* Smaller padding for list items */  
+    }  
+
+    .user-img {  
+        width: 35px; 
+        height: 35px; 
+    }
+
+    .toggle-button {
+        visibility: visible;
+    }
+}

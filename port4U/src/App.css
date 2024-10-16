@@ -1,1 +1,21 @@
 /* THE APP CSS STYLING GOES HERE */
+
+.main-container {
+    background-color: rgba(10, 28, 43, 0.402);
+    padding: 20px;
+    width: 70%;
+    margin-left: 300px;
+    display: grid;
+}
+
+@media (max-width: 868px) {
+    .main-container {
+        background-color: rgba(10, 28, 43, 0.935);
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        background-color: transparent;
+        font-size: smaller;
+        
+    }
+}
