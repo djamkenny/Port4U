@@ -1,0 +1,13 @@
+.grid-container {
+    /* background-color: rgb(14, 97, 170); */
+    width: 500px;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        width: 98%;
+        
+    }
+}
+

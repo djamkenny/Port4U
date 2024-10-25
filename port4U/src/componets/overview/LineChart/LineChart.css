@@ -1,16 +1,36 @@
 .line-chart {
-    width: 50%;
-    height: 40vh;
-    margin-bottom: 30px;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px 0px 0 0px;
+    font-size: smaller;
+    color: #1e1e2f9b;
 }
 
 @media (max-width: 768px) {
     .line-chart {
         padding: 0;
-        width: 95%;
-        margin: 100px 10px 0 0px;
+        width: 100%;
+        height: fit-content;
+        margin: 10px 0px 0 0px;
         font-size: smaller;
-        text-wrap-mode: nowrap;
+        color: #1e1e2f9b;
     }
 }
 
+@media (max-width: 490px) {
+    .line-chart {
+        height: fit-content;
+    }
+}
+
+@media (max-width: 490px) {
+    .line-chart {
+        padding: 0;
+        width: 100%;
+        height: fit-content;
+        margin: 10px 0px 0 0px;
+        font-size: smaller;
+        color: #1e1e2f9b;
+    }
+}

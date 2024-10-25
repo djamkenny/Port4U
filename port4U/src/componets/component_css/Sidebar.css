@@ -1,22 +1,22 @@
 body {  
-    margin: 0;  
-    font-family: Arial, sans-serif;  
-    background-color: #1e1e2f;  
-    color: #ffff;  
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f;
+    color: #ffff;
 }  
 
 .app-container {  
-    position: relative; /* Relative position for button movement */  
+    position: relative;
 }  
 
 .toggle-button {  
-    position: fixed;  
-    top: 20px;  
-    right: 20px; /* Position it to the right */  
-    background: transparent;  
-    border: none;  
-    cursor: pointer;  
-    z-index: 1000; /* Ensure button is above other elements */  
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000; 
     padding: 10px;  
     background-color: #1e1e2f;
     border-radius: 10px;
@@ -27,22 +27,23 @@ body {
     display: block;  
     width: 30px;  
     height: 3px;  
-    background-color: #3b4266;  
+    background-color: #adb4d6;
     margin: 5px auto;  
-    transition: all 0.3s ease;  
+    transition: all 0.3s ease;
 }  
 
 .sidebar {  
-    width: 350px;  
-    background-color: #1F233D;  
-    padding: 20px;  
-    position: fixed; /* Fixed position for larger screens */  
+    width: 270px;  
+    background-color: #1F233D;
+    padding: 20px;
+    position: fixed;
     left: 0;  
     top: 0;  
     bottom: 0;  
-    transition: transform 0.3s ease; /* Smooth transition for opening/closing */  
-    transform: translateX(-100%); /* Hide sidebar off-screen initially */
+    transition: transform 0.3s ease;  
+    transform: translateX(-100%); 
     height: 100vh;
+    overflow-y: scroll;
 }  
 
 .sidebar.open {  
@@ -54,20 +55,20 @@ body {
 }  
 
 .logo {  
-    font-size: 30px;  
+    font-size: 20px;  
     font-weight: bold;  
     margin-bottom: 20px;  
 }  
 
 .section {  
-    margin-bottom: 20px;  
+    margin-bottom: 15px;  
     color: #A1A8A5;  
     border-bottom: solid 0.21px #2d3356;  
 }  
 
 h3 {  
-    font-size: 15px;  
-    margin-bottom: 10px;  
+    font-size: 12px;  
+    margin-bottom: 7px;  
     font-weight: bold;  
     color: #4c4f5e;  
 }  
@@ -78,10 +79,11 @@ ul {
 }  
 
 li {  
-    padding: 10px; 
-    margin-bottom: 4px; 
+    padding: 7px; 
+    margin-bottom: 2px; 
     cursor: pointer;
-    margin-left: 20px; 
+    margin-left: 15px; 
+    font-size: 12px;
 }  
 
 li:hover {  
@@ -98,7 +100,7 @@ li:hover {
     margin-top: auto;  
 }  
 
-.user-img {  
+.user-img {
     border-radius: 50%;  
     width: 40px;  
     height: 40px;  
@@ -106,20 +108,20 @@ li:hover {
 }  
 
 /* Mobile Styles */  
-@media (max-width: 868px) {  
+@media (max-width: 898px) {  
     .sidebar {  
-        width: 100%; /* Full width on mobile */  
-        max-width: none; /* Remove max-width */  
-        padding: 15px; /* Adjust padding */  
+        width: 100%; 
+        max-width: none;  
+        padding: 15px;  
         overflow-y: scroll;
     }  
 
     h3 {  
-        font-size: 16px; /* Smaller font size for headings */  
+        font-size: 16px;   
     }  
 
     li {  
-        padding: 8px; /* Smaller padding for list items */  
+        padding: 8px;  
     }  
 
     .user-img {  
@@ -130,4 +132,19 @@ li:hover {
     .toggle-button {
         visibility: visible;
     }
+}
+@media (max-width: 768px) {
+    h3 {
+        font-size: 20px;
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    .logo {
+        font-size: 60px;
+        margin-bottom: 60px;
+    }
+    
 }

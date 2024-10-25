@@ -12,17 +12,18 @@ const LineChart = () => {
     datasets: [  
       {  
         label: 'Employment rate',  
-        data: [100, 200, 300, 400, 300, 500, 400, 450, 500],  
+        data: [100, 50, 300, 200, 300, 400, 200, 450, 500],  
         borderColor: 'rgba(0, 235, 0, 1)', // Green  
-        backgroundColor: 'rgba(0, 235, 0, 0.2)',  
-        fill: true,  
+        backgroundColor: 'rgba(0, 235, 0, 0.2)',
+        fill: true,
         tension: 0.4,  
-      },  
+      },
+      
       {  
         label: 'Connections',  
-        data: [150, 250, 350, 300, 400, 450, 500, 400, 450],  
+        data: [150, 250, 350, 300, 200, 300, 500, 400, 450],  
         borderColor: 'rgba(0, 0, 255, 1)', // Blue  
-        backgroundColor: 'rgba(0, 0, 255, 0.2)',  
+        backgroundColor: 'rgba(0, 0, 255, 0.2)', 
         fill: true,  
         tension: 0.4,  
       },  
@@ -40,15 +41,15 @@ const LineChart = () => {
       y: {  
         beginAtZero: true,  
         ticks: {  
-          callback: (value) => `$${value}`, // Format y-axis labels  
+          callback: (value) => `$${value}`,
         },  
       },  
     },  
   };  
 
   return (  
-    <div className='line-chart' style={{ backgroundColor: '#1e1e2f', padding: '20px', borderRadius: '8px' }}>  
-      <h2 style={{ color: '#fff', margin: '3' }}>Insight</h2>  
+    <div className='line-chart' style={{ backgroundColor: '#1e1e2f9b', padding: '20px', borderRadius: '8px' }}>  
+      <h2 style={{ color: '#fff', marginBottom: '3' }}>Insight</h2>  
       <Line data={data} options={options} />  
       <div style={{ color: '#fff', marginTop: '10px' }}>  
         {/* <span style={{ color: 'rgba(0, 255, 0, 1)', marginRight: '10px' }}>● Employment rate</span>   */}

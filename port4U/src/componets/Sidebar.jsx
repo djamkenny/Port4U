@@ -9,7 +9,7 @@ import React, { useState, useEffect } from 'react';
 
 const Sidebar = () => {  
     const [isOpen, setIsOpen] = useState(window.innerWidth > 768); // Set to true if larger than 768px  
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);  
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 868);  
 
     const toggleSidebar = () => {  
         if (isMobile) {  
@@ -18,8 +18,8 @@ const Sidebar = () => {
     };  
 
     const handleResize = () => {  
-        setIsMobile(window.innerWidth <= 768);  
-        if (window.innerWidth > 768) {  
+        setIsMobile(window.innerWidth <= 868);  
+        if (window.innerWidth > 868) {  
             setIsOpen(true); // Keep the sidebar open on larger screens  
         } else {  
             setIsOpen(false); // Close the sidebar on smaller screens  
