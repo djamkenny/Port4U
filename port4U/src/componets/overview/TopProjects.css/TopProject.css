@@ -4,6 +4,8 @@
     padding: 3px 0 7px 0;  
     border-radius: 8px;
     width: fit-content;
+    min-width: 510px;
+    max-width: 400px;
     height: fit-content;
     margin-top: 25px;
   }  
@@ -60,3 +62,36 @@
   }
 }
 
+@media (max-width: 435px) {
+  .top-projects {
+      min-width: 355px;
+      max-width: 200px;
+  }
+  
+}
+
+@media (max-width: 398px) {
+  .top-projects {
+      min-width: 355px;
+      max-width: 200px;
+  }
+  
+}
+
+
+@media (max-width: 378px) {
+  .top-projects {
+      min-width: 360px;
+      max-width: 200px;
+  }
+  
+}
+
+
+@media (max-width: 320px) {
+  .top-projects {
+      min-width: 318px;
+      max-width: 200px;
+  }
+  
+}

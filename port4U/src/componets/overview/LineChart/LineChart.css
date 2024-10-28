@@ -2,6 +2,8 @@
     padding: 0;
     width: fit-content;
     height: fit-content;
+    min-width: 510px;
+    max-width: 400px;
     margin: 10px 0px 0 0px;
     font-size: smaller;
     color: #1e1e2f9b;
@@ -18,11 +20,7 @@
     }
 }
 
-@media (max-width: 490px) {
-    .line-chart {
-        height: fit-content;
-    }
-}
+
 
 @media (max-width: 490px) {
     .line-chart {
@@ -33,4 +31,39 @@
         font-size: smaller;
         color: #1e1e2f9b;
     }
+}
+
+@media (max-width: 435px) {
+    .line-chart {
+        min-width: 355px;
+        max-width: 200px;
+    }
+    
+}
+
+@media (max-width: 398px) {
+    .line-chart {
+        min-width: 355px;
+        max-width: 200px;
+    }
+    
+}
+
+
+@media (max-width: 378px) {
+    .line-chart {
+        min-width: 360px;
+        max-width: 200px;
+    }
+    
+}
+
+
+@media (max-width: 322px) {
+    .line-chart {
+        min-width: 318px;
+        max-width: 300px;
+        
+    }
+    
 }

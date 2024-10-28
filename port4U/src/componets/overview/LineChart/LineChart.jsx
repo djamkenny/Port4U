@@ -48,7 +48,7 @@ const LineChart = () => {
   };  
 
   return (  
-    <div className='line-chart' style={{ backgroundColor: '#1e1e2f9b', padding: '20px', borderRadius: '8px' }}>  
+    <div className='line-chart' style={{ backgroundColor: '#1e1e2f9b', padding: '12px', borderRadius: '8px' }}>  
       <h2 style={{ color: '#fff', marginBottom: '3' }}>Insight</h2>  
       <Line data={data} options={options} />  
       <div style={{ color: '#fff', marginTop: '10px' }}>  

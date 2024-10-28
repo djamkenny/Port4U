@@ -43,7 +43,7 @@ body {
     transition: transform 0.3s ease;  
     transform: translateX(-100%); 
     height: 100vh;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }  
 
 .sidebar.open {  
@@ -108,7 +108,7 @@ li:hover {
 }  
 
 /* Mobile Styles */  
-@media (max-width: 898px) {  
+@media (max-width: 920px) {  
     .sidebar {  
         width: 100%; 
         max-width: none;  
@@ -133,6 +133,8 @@ li:hover {
         visibility: visible;
     }
 }
+
+
 @media (max-width: 768px) {
     h3 {
         font-size: 20px;
