@@ -1,6 +1,6 @@
-import LineChart from "./overview/LineChart/LineChart";
-import TopProjects from "./overview/TopProjects.css/TopProjects";
-import './Overview.css'
+import LineChart from "../componets/overview/LineChart/LineChart";
+import TopProjects from "../componets/overview/TopProjects.css/TopProjects";
+import './PagesCSS/Overview.css'
 
 
 const Overview = () => {

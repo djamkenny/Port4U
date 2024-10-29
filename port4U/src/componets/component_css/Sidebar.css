@@ -78,13 +78,17 @@ ul {
     padding: 0;  
 }  
 
-li {  
-    padding: 7px; 
-    margin-bottom: 2px; 
+ li {
+    padding: 7px;
+ }
+
+a {
+    text-decoration: none;
     cursor: pointer;
-    margin-left: 15px; 
-    font-size: 12px;
-}  
+    font-size: 15px;
+    color: #A1A8A5;
+    background-color: #565675;
+}
 
 li:hover {  
     background-color: #3a3a4f;  

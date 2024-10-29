@@ -45,13 +45,14 @@ const Sidebar = () => {
                 <div className="section">  
                     <h3>General</h3>  
                     <ul>  
-                        <li className="active">Overview Dashboard</li>  
-                        <li>Video Tube</li>  
-                        <li>Community</li>   
-                        <li>Recruitment</li>  
-                        <li>Projects and Innovations</li>  
-                        <li>Mentorship Programs</li>  
-                        <li>Hackathons</li>  
+                        <a href="/overview"><li>Overview Dashboard</li></a>
+                        <a href="/videotube"><li>VideoTube</li></a>
+                        <a href="/Community"><li>Community</li></a>
+                        <a href="/Recruitment"><li>Recruitment</li></a>
+                        <a href="/Project"><li>Projects and Innovations</li></a>
+                        <a href="/Mentorship"><li>Mentorship Programs</li></a>
+                        <a href="/Hackathon"><li>Hackathons</li></a>
+                        
                     </ul>  
                 </div>  
                 <div className="section">  
