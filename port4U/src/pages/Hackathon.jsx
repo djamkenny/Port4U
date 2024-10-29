@@ -1,7 +1,13 @@
 import React from 'react';  
+import './PagesCSS/Blank.css'
 
-const About = () => {  
-  return <h1>Page Under Contruction</h1>;  
+
+const Home = () => {  
+  return (  
+    <div>  
+      <h1>Page Under Contruction</h1>  
+    </div>  
+  );  
 };  
 
-export default About;
+export default Home; 

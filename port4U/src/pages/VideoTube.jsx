@@ -1,7 +1,12 @@
 import React from 'react';  
 
-const About = () => {  
-  return <h1>Page Under Contruction</h1>;  
+
+const Home = () => {  
+  return (  
+    <div>  
+      <h1>Page Under Contruction</h1>  
+    </div>  
+  );  
 };  
 
-export default About;
+export default Home; 
