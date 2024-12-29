@@ -58,7 +58,7 @@ const Sidebar = () => {
                 <div className="section">  
                     <h3>My Space</h3>  
                     <ul>  
-                        <li>Dashboard</li>  
+                        <a href="/Dashboard"><li>Dashboard</li>  </a>
                         <li>Portfolio</li>  
                         <li>Mini Community</li>  
                         <li>Inbox</li>  

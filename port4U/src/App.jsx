@@ -17,6 +17,7 @@ import Hackathon from './pages/Hackathon';
 import VideoTube from './pages/VideoTube';  
 import Project from './pages/Project';
 import Mentorship from './pages/Mentorship';
+import Dashboard from './pages/Dashboard';
 
 function APP() {  
   return (
@@ -36,6 +37,13 @@ function APP() {
                 <Route path="/recruitment" element={<Recruitment/>} />
                 <Route path="/project" element={<Project/>} />
                 <Route path="/mentorship" element={<Mentorship/>} />
+
+                {/* the rest of the navigation start from here */}
+                <Route path="/dashboard" element={<Dashboard/>} />
+                {/* <Route path="/mentorship" element={<Mentorship/>} />
+                <Route path="/mentorship" element={<Mentorship/>} />
+                <Route path="/mentorship" element={<Mentorship/>} />
+                <Route path="/mentorship" element={<Mentorship/>} /> */}
               </Routes>
               </BrowserRouter>
               {/* <Overview></Overview> */}
