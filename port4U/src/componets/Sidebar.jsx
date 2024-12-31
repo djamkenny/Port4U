@@ -40,6 +40,8 @@ const Sidebar = () => {
                 <span className="bar"></span>  
                 <span className="bar"></span>  
             </button>  
+
+            {/* General section */}
             <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>  
                 <div className="logo">Port4U</div>  
                 <div className="section">  
@@ -47,32 +49,38 @@ const Sidebar = () => {
                     <ul>  
                         <a href="/overview"><li>Overview Dashboard</li></a>
                         <a href="/videotube"><li>VideoTube</li></a>
-                        <a href="/Community"><li>Community</li></a>
-                        <a href="/Recruitment"><li>Recruitment</li></a>
-                        <a href="/Project"><li>Projects and Innovations</li></a>
-                        <a href="/Mentorship"><li>Mentorship Programs</li></a>
-                        <a href="/Hackathon"><li>Hackathons</li></a>
+                        <a href="/community"><li>Community</li></a>
+                        <a href="/recruitment"><li>Recruitment</li></a>
+                        <a href="/project"><li>Projects and Innovations</li></a>
+                        <a href="/mentorship"><li>Mentorship Programs</li></a>
+                        <a href="/hackathon"><li>Hackathons</li></a>
                         
                     </ul>  
-                </div>  
+                </div> 
+
+                {/*My space section  */}
                 <div className="section">  
                     <h3>My Space</h3>  
                     <ul>  
-                        <a href="/Dashboard"><li>Dashboard</li>  </a>
-                        <li>Portfolio</li>  
-                        <li>Mini Community</li>  
-                        <li>Inbox</li>  
-                        <li>Manage Account</li>  
+                        <a href="/dashboard"><li>Dashboard</li> </a>
+                        <a href="/portfolio"><li>Portfolio</li> </a>
+                        <a href="/mini-community"><li>Mini Community</li>  </a>
+                        <a href="/inbox"><li>Inbox</li>  </a>
+                        <a href="/manage-Account"><li>Manage Account</li>  </a>
                     </ul>  
-                </div>  
+                </div> 
+
+                {/*support section  */}
                 <div className="section">  
                     <h3>Supports</h3>  
                     <ul>  
-                        <li>Customer Service</li>  
-                        <li>Settings</li>  
-                        <li>Chat with AI bot</li>  
+                        <a href="/customer-Service"><li>Customer Service</li> </a>
+                        <a href="/settings"><li>Settings</li> </a>
+                        <a href="/chat-bot"><li>Chat with AI bot</li> </a>  
                     </ul>  
                 </div>  
+
+                {/* user managements */}
                 <div className="user">  
                     <img src="enoch.jpg"  className="user-img" /> 
                     {/* hard coding here!! user must be able to set their own user profile */}
