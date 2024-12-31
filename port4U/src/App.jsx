@@ -12,7 +12,7 @@ import React from "react";
 
 import Overview from "./pages/Overview";
 import Recruitment from './pages/Recruitment';  
-import Community from './pages/Community';   
+import Community from './pages/mini-chat/Community';   
 import Hackathon from './pages/Hackathon';  
 import VideoTube from './pages/VideoTube';  
 import Project from './pages/Project';
